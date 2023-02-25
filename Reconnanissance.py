@@ -1,4 +1,4 @@
-#Reconnanissance
+#Reconnaissance
 import requests #use the requests library
 targeted_url = 'http://172.18.58.80/multi' #set the targeted url
 webpage = requests.get(targeted_url)
