@@ -9,7 +9,7 @@ h = requests.head(targeted_url) #gets the headers
 print("Header:")
 print("Header starts here")
 for x in h.headers: #to print line by line
-    print("\t ", x, ":", h.headers[x])https://github.com/satan24/DA_Group1/blob/master/Reconnanissance.py
+    print("\t ", x, ":", h.headers[x])
 print("Header ends here")
 headers = {'User-Agent' : 'Mobile'} #Modify the headers user-agent
 targeted_url2 = 'http://httpbin.org/headers' #test it on an external site
