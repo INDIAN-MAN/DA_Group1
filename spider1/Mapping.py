@@ -7,8 +7,7 @@ class NewSpider(scrapy.Spider):
         for x in response.css(css_selector):
             newsel = '@src'
             yield {'Image Link': x.xpath(newsel).extract_first(), }
-        # To recurse next page
-        page_selector = '.next a ::attr(href)'
+        page_selector = '.next a ::attr(href)' # To recurse next page
         next_page = response.css(page_selector).extract_first()
         if next_page:
             yield scrapy.Request(response.urljoin(next_page), callback=self.parse)
