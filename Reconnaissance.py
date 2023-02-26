@@ -1,7 +1,7 @@
 #Reconnaissance
 import requests #use the requests library
 targeted_url = 'http://172.18.58.80/multi' #set the targeted url
-webpage = requests.get(targeted_url)
+webpage = requests.get(targeted_url) # this is the url
 print(webpage.text) #this will get the full webpage in text
 print("status code:") #get and print the status code
 print("\t *", webpage.status_code)
